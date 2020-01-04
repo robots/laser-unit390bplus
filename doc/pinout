@@ -1,0 +1,93 @@
+lcd
+1-led
+2-nc
+3-nc
+4-vcc
+5-data
+6-data
+7-gnd
+8-data
+9-data
+10-cap?
+
+
+btn
+1- gnd
+2- gnd
+3 - gnd
+4 - ?
+5 - off
+6 - save
+7 - base
+8 - +-
+9  - func
+10 - pwr
+
+
+PA00 - ADC - battery voltage
+PA01 - ADC - signal from apd
+PA02 - tim15ch1 - beep
+PA03 - ADC - apd signal level
+PA04 - ADC - ? missing chip
+PA05 - out - ? missing chip 
+PA06 - tim3ch1 - pwm input ?
+PA07 - in - power on
+PA08 - tim1ch1 - pwm output - APD dcdc
+PA09 - uart
+PA10 - uart
+PA11 - in - btn
+PA12 -       ? missing chip
+PA13 - swdio
+PA14 - swclk
+PA15 - in - btn
+
+PB00 - out - poweron
+PB01 - in  - ? unpopulated laser something 
+PB02 - out - enable analog part
+PB03 - out - lcd bklight
+PB04 - i2c si5351
+PB05 - i2c si5351
+PB06 - lcd - clk
+PB07 - lcd - data
+PB08 - lcd - csn
+PB09 - lcd - rst
+PB10 - fram i2c
+PB11 - fram i2c
+PB12 - out - laser power
+PB13 - out - laser select
+PB14 - in - btn 
+PB15 - in - btn
+
+PC13 - btn
+PC14 - btn
+PC15 - btn
+
+PF0  - osc - np
+PF1  - osc - np
+
+PF06 - btn
+PF07 - btn
+
+
+
+
+si5351:
+
+out0 - 8mA, MS integer, pllA
+out1 - 8mA, MS fract, pllA
+out2 - 8mA, MS integer, pllB
+
+
+plla - 26
+
+msna_p1 - 0xACC,  
+msna_p2 - 0x04,
+msna_p3 - 0x005, 
+
+msnb_p1 - 0xACC, 
+msnb_p2 - 0x368,
+msnb_p3 - 0x4E2,
+
+ms0_p3 - 0x0001
+
+,   0xC,     0
